@@ -1,0 +1,795 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+:root{
+    --primario:#3146f5;
+    --secundario:#dbf3f1d5;
+    --obscuro:#ff212121;
+    --gria:#bebebe8c;
+    --footer:rgba(106, 102, 102, 0.401);
+}
+body{
+    background-image: url("/img/Fondo/eugene-chystiakov-udEtTnAcSD8-unsplash.jpg");
+    background-color: black;
+    background-position:center ;/*Nos coloca nuestra imagen centrada */
+    background-repeat: no-repeat;/*Hace que no se repita nuestra imagen*/
+    background-size: cover;/* hace cubrir toda la pantalla*//*Hace mas larga la extencion del fondo de inicio*/
+    opacity: 85%;
+    font-family: cursive;
+}
+.contenedor_barra{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color:rgba(255, 0, 0, 0);
+    margin-bottom: 1rem;
+}
+.contendeorbanner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    margin-bottom:50px;
+    flex: 1;
+    background-color: transparent;
+}
+.logo{
+    background-color: transparent;
+    height: 350px;
+    width: 300px;
+}
+.contenedor_principal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: transparent;
+    margin-bottom: 100px;
+}
+.letrasin{
+    font-size:x-large;
+    color: aliceblue;
+}
+.imginicio{
+    height: 426px;
+    width: 640px;
+}
+
+.contenedor_slogan{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    background-color: transparent;
+}
+.contenedor_secundario{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;/*Sirve parra la separacion del contenedor*/
+    background-color: var(--gris);
+    margin-bottom: 10px;/*Sirve para separar mi contenedor*/
+}
+.contenedorprograma{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    background-color: red;
+}
+
+
+
+
+h1{
+    color: black;
+    font-size: xx-large;
+}
+.box2{
+    font-size:larger;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex:2;
+    margin: 1rem; /*Para el espacio de separacion que se encuentran en los elementos*/
+}
+.box2 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    padding: 1rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    position: relative;
+}
+.box2 a:hover{
+    color: rgb(255, 255, 255);/*Ocupamos separar el hover para que funcione por separado*/
+}
+.box2 a::after{
+    color: rgb(0, 0, 0);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.25s ease-out;
+}
+.box2 a:hover::after{ 
+    transform: scale(1);
+    color: rgb(29, 29, 29);
+    transform-origin: bottom left;  
+}
+.box3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #3333335a;
+    flex: 2;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem;
+    margin-right: 1rem;
+    border-radius: 20px;  
+}
+.box4{
+    display: flex;
+    flex-direction: column;
+    align-items:self-end;
+    background-color: #3333335a;
+    flex: 4;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem;
+    margin-right: 1rem;
+    border-radius: 20px;  
+}
+.box5{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #3333335a;
+    justify-content: center;
+    align-items: center;
+    flex: 0.5;
+    margin: 1rem;
+    border-radius: 20px;
+}
+.box6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 0.5;
+    background-color: #3333335a;
+    margin: 1rem;
+    border-radius: 20px;
+}
+.section_img{
+    display: flex;
+    width: 400px;
+    height: 300px;
+}
+.section_img img{
+    border-radius: 5%;
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 90%;
+    transition: .5s ease;
+}
+.section_img img:hover{
+    width: 200px;
+    opacity: 100%;
+    filter: contrast(120%);
+}
+
+
+
+/*footer*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+
+}
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-column {
+    flex: 1;
+}
+.footer-column.middle {
+    text-align: center;
+}
+.imgfooter {
+    height: 200px;
+    width: 150px;
+}
+.footer-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    fill: #fff; /* Cambia el color de los iconos si es necesario */
+}
+/*Programa imagen*/
+
+.contenedorprograma {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagenInput {
+    margin-bottom: 20px;
+}
+
+#imagenContenedor {
+    max-width: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#imagenContenedor img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#especificacionesImagen {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+}
+
+        
+
+
+
+
+
+
+@media(max-width:1130px){
+    .contenedor_barra{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .contendeorbanner{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:1130px){
+    .contenedor_principal{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .box3{
+        align-items: center;
+        text-align: center;
+    }
+    .box4{
+        align-items: center;
+        text-align: center;
+    }
+    .contenedor_secundario{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .box5{
+        align-items: center;
+        text-align: center;
+    }
+    .box6{
+        align-items: center;
+        text-align: center;
+    }
+    .section_img{
+        display: flex;
+        width: 300px;
+        height: 200px;
+    }
+}
+/*Footer */
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+/* for all social containers*/
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+}
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+.socialSvg {
+    width: 17px;
+}
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+@keyframes slide-in-top {
+    0% {
+
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* css de galeria*/
+.ltrat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0);
+    font-size: 4rem;
+    color: #fff;
+    font-family: cursive;
+}
+.contenedor_carru{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px; /* Aumentamos el ancho máximo para permitir imágenes más grandes */
+    margin: 0 auto;
+}
+.carousel-container {
+    display: flex;
+    animation: deslizar 20s linear infinite; /* Aumentamos la duración para dar más tiempo a cada imagen */
+}
+
+.carousel-container img {
+    width: 400px;
+    height: auto;
+    margin-right: 20px; /* Añadimos una separación entre las imágenes */
+}
+@keyframes deslizar {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); /* Desplazamiento del 50% del ancho para que las imágenes se repitan infinitamente */
+    }
+}
+
+/*carrito*/
+/* Estilos para la barra de búsqueda */
+.contenedorcarrito{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+label,
+input,
+select {
+    margin-bottom: 10px;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.hidden {
+    display: none;
+}
+
+#ticket {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#ticket h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#ticket p {
+    margin: 0;
+}
+
+#ticketTransferInfo {
+    text-align: center;
+}
+
+/*chat*/
+.chat{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#chat-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#chat-body {
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.bot {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#send-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/*Inisiar sesion*/
+.iniciarsesion{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(255, 0, 0, 0);
+    margin-bottom: 100px;
+}
+.form {
+    max-width: 320px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 0px 4px rgba(52, 52, 53, 0.185);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1a202c;
+}
+
+.label {
+    color: rgb(0, 0, 0);
+    margin-bottom: 4px;
+}
+
+.input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 1rem;
+    color: #4a5568;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.input:focus {
+    background-color: #fff;
+    box-shadow: 0 0 0 2px #cbd5e0;
+}
+
+.input:valid {
+    border: 1px solid green;
+}
+
+.input:invalid {
+    border: 1px solid rgba(14, 14, 14, 0.205);
+}
+
+.submit {
+    background-color: #1a202c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+/*carrito2*/
+/* Estilos para las imágenes y el carrito */
+/* Estilos para las imágenes y el carrito */
+.image-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-section img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.carrito {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrito-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.carrito-imagen {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+  /* Estilos para el formulario */
+.formulario {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: whitesmoke;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.formulario button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+  /* Estilos para el ticket */
+.ticket {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: whitesmoke;
+} 
+.ticket p {
+    margin-bottom: 5px;
+}
+
+.ticket .deposito {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+  /* Estilos generales */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.containercarrito{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/*esticlo css para agregarr tatuadores*/
+.contenedoragregartatuadores{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.tabla-personas {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+}
+.encabezado-tabla, .datos-tabla {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.encabezado-tabla {
+    background-color: #f2f2f2;
+}
+.formulario-personas {
+    color: whitesmoke;
+    text-align: center;
+}
+.etiqueta-formulario {
+    display: block;
+    margin-top: 10px;
+}
+.entrada-formulario {
+    padding: 6px;
+    width: 100%;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.boton-formulario {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
